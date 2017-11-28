@@ -28,21 +28,27 @@ nav li a.contacto {
 
 nav ul {
     list-style: none;
+    text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
+    color: ghostwhite;
 }
 
 nav {
     font-size: 16px;
 }
 
+.contacto{
+    padding-top: 150px;
+    color: white;
+}
+
 body{
 	font-size: 20px;
 /*    background: url(img/vintage.jpg)*/
     
-	
 }
 .imagen-fondo {
     background-image: url(img/background.jpg);
@@ -64,9 +70,10 @@ body{
 
 .body-main {
     
-    margin: 10px auto;
+    margin: 30px auto;
     width: 80%;
-    height: 450px;
+    height: 250px;
+    
 }
 
 .foot-page {
