@@ -42,7 +42,9 @@ nav {
 
 .contacto{
     padding-top: 150px;
+    width: 80%;
     color: white;
+    margin: 0 auto;
 }
 
 body{
