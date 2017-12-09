@@ -29,10 +29,10 @@ a{
 }
 
 /*aside*/
-div aside{
+aside{
     margin: 0 auto;
 }
-div aside figure img{
+aside figure img.fondo{
     width: 100%;
     height: 250px;
 }
