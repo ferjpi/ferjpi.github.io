@@ -1,111 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>BLOG</title>
+<head>
+	<title>El gran libro</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width">
     <meta name="description" content="Blog profesional">
     <meta name="keywords" content="HTML5, CSS, JavaScript, BLOG, PROFESIONAL">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+<!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/docs.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-
-  </head>
-  <body id="INICIO">
-    <header>
-        <nav>
-           <img src="img/blogger.png"/>
-            <ul>
-                <li>
-                    <a href="#CONTACTO">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-         <aside>
-             <figure>
-                 <img class="fondo" src="img/background-2426328_640.jpg" alt="portada, taza de te"/>
-             </figure>
-         </aside>
-     
-    <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-md-4">
-                 <aside>
-                     <figure class="libro">
-                        <img src="img/libro.png"/>
-                        <br/>
-                        <figcation>
-                            El gran libro de HTML5, CSS3 y JAVASCRIPT<br/>
+    <link rel="stylesheet" href="css/estilospost-libro.css">
+    <link rel="icon" href="img/blogger.ico">
+</head>
+<body>
+	<div class="container">
+		<header id="main-header">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-1 col-md-push-1 col-lg-1 col-lg-push-1">
+					<center>
+					<figure>
+						<img id="logo" src="img/blogger.png">
+					</figure>
+					</center>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5 col-md-push-5 col-lg-5 col-lg-push-5">
+					<div class="main-nav">
+						<ul id="mobile-main-menu" class="nav nav-pills">
+							<li>
+								<a href="index.html">INICIO</a>
+							</li>
+							<li>
+								<a href="#CONTACTO">CONTACTO</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>			
+		<aside id="imagen-portada">
+				<div class="row">
+					<div class="col-xs-12">
+						<figure>
+							<img class="img-responsive" src="img/portada-libro.png" alt="portada libros">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<section id="main-content">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-sm-offset-1">
+					<figure class="imagen-lateral">
+						<img class="img-responsive" src="img/libro.png" alt="imagen de la portada del libro">
+					</figure>
+					<center>
+					<figcaption>
+						El gran libro de HTML5, CSS3 y JAVASCRIPT<br/>
                             <small>
                                <small>By Juan Diego Gauchat</small> 
-                            </small>
-                        </figcation>
-                    </figure>
-                 </aside>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-8">
-                   <article>
+                            </small><br/><br/>
+					</figcaption>
+					</center>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-sm-offset-1">
+					<article>
                         <p>
                             El Gran Libro de HTML5, CSS3 y JAVASCRIPT, es uno de esos libros que debes leer si estas comenzando en  el mundo de la programacion web.
                         </p>
+                        <p>
+                            Comenzando por las nuevas caracteristicas que trae HTML5, con una base teorica facil de asimilar y con ejemplos que ayudan a la comprension de los atributos, metodos y/o elementos tratados.
+                        </p>
+                        <p>
+                            El libro se divide en capitulos donde encontraremos ejemplos que podremos ir realizando a medida que vamos avanzando y que el autor incita hacer. <br/>
+                        </p>
                    </article>
-             </div>
-         </div>
-     </div>
-    
-    </section>
-    <footer id="CONTACTO">
-        <ul>
-            <li>
-                <a class="facebook" href="http://www.facebook.com/fernandojt">
-                    <img src="img/facebook.png" />
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a class="instagram" href="http://www.instagram.com/fernandojpineda">
-                    <img src="img/instagram.png" />
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a class="twitter" href="http://www.twitter.com/fernandojpineda">
-                    <img src="img/twitter.png" />
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a class="linkedin" href="http://www.linkedin.com/in/fernando-pineda-79453566/">
-                    <img src="img/linkedin.png" />
-                </a>
-            </li>
-        </ul>
-        <p>
-        <small>
-            Contacto: fernandojpt1203@hotmail.com
-        </small>
-        </p>
-    </footer>
-      
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+                   <article>
+                       <figure class="ejemplo1">
+                          <center>
+                           <img class="img-responsive" src="img/img1-400x533.png">
+                           <figcaption>
+                               <strong>Ejemplo</strong> <br/><br/>
+                           </figcaption>
+                          </center>
+                       </figure>
+                   </article>
+                   <article>
+                       <p>
+                           El libro representa una base para comprender mejor el uso de HTML5, CSS3 y JAVASCRIPT. Enseñandonos con ejemplos y una explicacion paso por paso de lo que que se hizo.
+                       </p>
+                       <p>
+                           Si eres nuevo en la programacion web o quieres reforzar conocimientos, este es un libro que debes tener encuenta.
+                       </p>
+                   </article>
+				</div>
+			</div>
+		</section>
+		<div class="clearfix"></div>
+		<footer id="CONTACTO">
+			<div class="row">
+				<div class="redes col-xs-12 col-sm-12 col-md-4 col-md-push-1">
+					<center>
+						<ul class="col-xs-3">
+				            <li>
+				                <a class="facebook" href="http://www.facebook.com/fernandojt">
+				                    <img src="img/facebook-icon.png" />
+				                </a>
+				            </li>
+				        </ul>
+				        <ul class="col-xs-3">
+				            <li>
+				                <a class="instagram" href="http://www.instagram.com/fernandojpineda">
+				                    <img src="img/instagram-icon.png" />
+				                </a>
+				            </li>
+				        </ul>
+				        <ul class="col-xs-3">
+				            <li>
+				                <a class="twitter" href="http://www.twitter.com/fernandojpineda">
+				                    <img src="img/twitter-icon.png" />
+				                </a>
+				            </li>
+				        </ul>
+				        <ul class="col-xs-3">
+				            <li>
+				                <a class="linkedin" href="http://www.linkedin.com/in/fernando-pineda-79453566/">
+				                    <img src="img/linkedin-icon.png" />
+				                </a>
+				            </li>
+				        </ul>
+			    	</center>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5 col-md-push-2">
+					<p class="texto">
+				        <small>
+				            Contacto: fernandojpt1203@hotmail.com
+				        </small>
+				    </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
 </html>
