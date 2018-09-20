@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Personal Blog",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferjpi/ferjpi.github.io.git"
+  },
+  "keywords": [
+    "blog",
+    "personal",
+    "html",
+    "css",
+    "bootstrap"
+  ],
+  "author": "fernando pineda <fernandojpt1203@gmail.com> (www.ferjpi.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferjpi/ferjpi.github.io/issues"
+  },
+  "homepage": "https://github.com/ferjpi/ferjpi.github.io#readme"
+}
