@@ -36,9 +36,16 @@
 
 /* Content */
 #main-content, #contact-form {
-  height: 80vh;
+  min-height: 80vh;
 }
-
+#main-content {
+  margin: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+#main-content article p {
+  text-align: justify;
+}
 /* Content */
 
 /*section and article*/
