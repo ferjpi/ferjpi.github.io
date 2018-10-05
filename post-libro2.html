@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>BLOG</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Blog profesional">
+    <meta name="keywords" content="HTML5, CSS, JavaScript, BLOG, PROFESIONAL">
+
+    <!-- Bootstrap CSS -->
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/favicon.ico">
+
+  </head>
+  <body>
+        <header id="main-header">
+           <div class="container">
+              <div class="row">
+                  <div class="col-12 text-center">
+                    <h1>Blog</h1>
+                  </div>
+              </div>
+            </div>
+         </header>
+
+        <!-- Menu  -->
+        <ul id="menu" class="nav justify-content-center ">
+          <li class="nav-item">
+            <a class="nav-link active text-body" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#">Publicaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <!-- Menu  -->
+
+
+		<section id="main-content">
+
+			<div class="row">
+				<div class="col-12 col-sm-4 text-center">
+					<figure class="imagen-lateral">
+						<img class="img-responsive" src="img/gulpjs.png" alt="gulpjs">
+					</figure>
+						<h6>Cómo configurar Gulp #4 para principiantes</h6>
+				</div>
+
+				<div class="col-12 col-sm-5">
+					<article>
+            <p>
+                Si eres como yo y estás empezando en esto de la programación y has intentado configurar tareas en tus proyectos para que se ejecuten de manera automática, seguramente habrás utilizado GulpJs o por lo menos haber escuchado de él. Con Gulp podemos escribir código en Sass y pasarlo a Css de una manera muy sencilla, también podremos comprimir ese mismo código utilizando uno de los tantos plugin que tiene.
+            </p>
+            <h4>Pero a todas estas ¿Qué es Gulp?</h4>
+            <p>
+                “gulp is a toolkit for automating painful or time-consuming task in your development workflow, so you can stop messing around and build something” que en castellano es “gulp es un conjunto de herramientas para automatizar tareas dolorosas o que consumen mucho tiempo en el desarrollo de tu flujo de trabajo, así puedes dejar de jugar y construir algo”, en pocas palabras Gulp nos ayuda a agilizar nuestro trabajo realizando una pequeña configuración inicial.
+            </p>
+            <h4>¿Existen otras herramientas que realizan este mismo trabajo?</h4>
+            <p>
+              Si, están Webpack y Grunt, cada una con sus ventajas y desventajas.
+            </p>
+            <br/>
+            <h4>¿Cómo configurar un proyecto con Gulp?</h4>
+            <p>
+              La versión que se va utilizar para esta demostración es la V4.0.0 que hasta la realización de este post se encuentra en su versión beta, también utilizaremos Panini, Browser-sync y Babel.
+            </p>
+            <p>
+              Para comenzar con nuestro proyecto lo primero será crear la carpeta del proyecto, ubicarnos en ella y ejecutar el comando npm init para crear nuestro package JSON
+            </p>
+            <span>
+              <p>$ npm init</p>
+            </span>
+
+            <p>
+              Luego de creado nuestro package JSON, instalamos Gulp con el siguiente comando
+            </p>
+            <span>
+              <p>$ npm install -D gulp@4.0.0</p>
+            </span>
+
+            <p>
+              Asegurate que sea la versión 4, ya que la se instala por defecto es la 3.
+            </p>
+            <span>
+              <p>
+                "devDependencies": { <br/>
+                  "gulp": "4.0.0" <br/>
+                }
+              </p>
+            </span>
+
+            <p>
+              Luego de esto instalamos las demás dependencias de desarrollo que necesitemos, en este caso Panini y Babel.
+            </p>
+            <span>
+              <p> $ npm install -D panini</p>
+            </span>
+            <span>
+              <p> $ npm install -D gulp-babel @babel/core @babel/cli @babel/preset-env</p>
+            </span>
+
+            <p>
+              recuerda crear un archivo .babelrc para especificar la versión que vamos a manejar de ESMACScript. Coloca el siguiente código dentro de del archivo creado.
+            </p>
+            <span>
+              <p>
+                { <br/>
+                  "presets": ["es2015", "stage-2"] <br/>
+                }
+              </p>
+            </span>
+            <p>
+              Para más información mira la documentación de Babel.
+            </p>
+            <p>
+              Instaladas las dependencias de desarrollo instalamos browser-sync como dependencia del proyecto, la cual nos permitirá crear un servidor local desde el cual podemos ejecutar nuestro proyecto.
+            </p>
+            <span>
+              <p> $ npm install browser-sync</p>
+            </span>
+
+            <p>
+              Ya con esto tenemos lo necesario para empezar nuestro proyecto, comenzaré creando una carpeta llamada src donde estarán mi archivo index.html y demás carpetas secundarias
+            </p>
+            <div class="images">
+              <img src="img/carpetas.png" alt="estructuras de carpetas">
+            </div>
+
+            <p>
+              Esta disposición de carpetas es opcional pero debido a que vamos a usar panini es la mejor forma de organizar nuestra área de trabajo.
+            </p>
+
+            <p>
+              Por último, para que finalmente podamos empezar a trabajar en nuestro proyecto debemos crear nuestro archivo llamado <span style="font-style: italic;">gulpfile.js</span> que en este caso como vamos a estar trabajando con la última versión de ES6 va llevar la extensión <span style="font-style: italic;">gulpfile.babel.js</span>, de esta manera le decimos a gulp que use babel.
+            </p>
+            <p>
+              El nuevo archivo lo creamos en la carpeta principal de nuestro proyecto
+            </p>
+
+            <p>
+              Ahora si, empecemos con la configuración.
+              Lo primero será importar nuestras herramientas de trabajo
+            </p>
+            <div class="images">
+              <img src="img/llamados.png" alt="llamados">
+            </div>
+
+            <p>
+              Ahora reunir las partes de nuestros archivos html en un solo archivo html, que es el que estará listo para producción
+            </p>
+            <div class="images">
+              <img src="img/pages.png" alt="pages">
+            </div>
+
+            <p>
+              Lo que está haciendo la anterior función es tomar todas nuestras páginas en html y unirlas en un solo archivo html.
+            </p>
+            <p>
+              Lo siguiente será pasar nuestros assets a la carpeta dist, en este caso solo las imagenes
+            </p>
+            <div class="images">
+              <img src="img/copy.png" alt="funcion copy">
+            </div>
+
+            <p>
+              Si se tiene archivos en sass estos son pasados a css con alguno de los plugin disponibles con que cuenta Gulp como <span style="font-style: italic;">gulp-sass</span>, en este ejemplo solo voy a pasar los archivos Css a la carpeta dist
+            </p>
+            <div class="images">
+              <img src="img/functioncss.png" alt="funcion css">
+            </div>
+
+            <p>Lo mismo con los archivos en javascript</p>
+            <div class="images">
+              <img src="img/functionjavascript.png" alt="funcion JavaScript">
+            </div>
+
+            <p>
+              Si te diste cuenta, sino va haber cambios a los archivos originalmente trabajados, hubieras podido trasladarlos todos en una sola tarea.
+            </p>
+            <p>
+              La siguiente función sólo es necesario si se trabaja con panini, esta permitirá refrescar los cambios hechos a las páginas parciales.
+            </p>
+            <div class="images">
+              <img src="img/functionreset.png" alt="funcion resetpages">
+            </div>
+
+            <p>
+              En la siguiente función inicializamos el servidor local en el puerto 3000 o en el que se desee y  le indicamos la carpeta que contiene todos nuestros archivos listos para ejecutarse.
+            </p>
+            <div class="images">
+              <img src="img/functionserver.png" alt="funcion server">
+            </div>
+
+            <p>
+              Para que se vean reflejados los cambios que vamos haciendo en el proyecto a medida que vamos trabajando, debemos crear un escucha, con la siguiente función lo podemos hacer.
+              A continuación entran en juego las novedades que trae Gulp en su versión 4, <span style="font-style: italic;">gulp series</span> y <span style="font-style: italic;">gulp parallel</span>, la primera ejecuta como su nombre lo indica una serie de funciones o tareas en un orden secuencial, si una de las funciones o tareas falla, se detiene la ejecución de la secuencia; la segunda como su nombre lo indica ejecuta funciones o tareas en paralelo, si una de estas falla, igual se termina de ejecutar la secuencia.
+            </p>
+            <div class="images">
+              <img src="img/functionwatch.png" alt="funcion watch">
+            </div>
+
+            <p>
+              Creamos una tarea que nos permita ejecutar todas las funciones anteriores
+            </p>
+            <div class="images">
+              <img src="img/gulptaskbuild.png" alt="tarea build">
+            </div>
+
+            <p>
+              Para terminar, seteamos la tarea final por defecto para así cuando llamamos el script gulp se ejecute todas las tareas relacionadas
+            </p>
+            <div class="images">
+              <img src="img/gulpstaskdefault.png" alt="tarea default">
+            </div>
+
+            <p>
+              Con esto ya tenemos nuestro archivo gulpfile terminado y podríamos dedicarnos a nuestro trabajo, delegando nuestras tareas a gulp.
+            </p>
+
+
+
+         </article>
+
+
+				</div>
+			</div>
+		</section>
+
+
+		<footer id="CONTACTO">
+				<div class="row">
+						<div class="redes col-12">
+								<center>
+									<a class="facebook" href="http://www.facebook.com/fernandojt">
+										<i class="fab fa-facebook-f fa-2x"></i>
+									</a>
+									<a class="instagram" href="http://www.instagram.com/fernandojpineda">
+										<i class="fab fa-instagram fa-2x"></i>
+									</a>
+									<a class="twitter" href="http://www.twitter.com/fernandojpineda">
+										<i class="fab fa-twitter fa-2x"></i>
+									</a>
+									<a class="linkedin" href="http://www.linkedin.com/in/fernando-pineda-79453566/">
+										<i class="fab fa-linkedin-in fa-2x"></i>
+									</a>
+								</center>
+						</div>
+				</div>
+		</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

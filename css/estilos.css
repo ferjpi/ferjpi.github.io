@@ -61,12 +61,35 @@
   transform: translateY(-4px);
   box-shadow: 0 5px 10px rgba(150,150,150,0.5);
 }
+.card img {
+  width: 314px;
+  height: 178px;
+}
 
 .card-text{
     text-align: justify;
 }
+.card-body {
+  width: 314px;
+  height: 240px;
+}
 .card-body a{
     margin-bottom: 5px;
+}
+
+#main-content article span p {
+  background-color: #ccc;
+  color: #000;
+  font-style: italic;
+  padding: 2px 5px;
+}
+#main-content article img {
+  max-width: 500px;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* contact page */
