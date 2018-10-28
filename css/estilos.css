@@ -179,6 +179,10 @@
         text-decoration: none;
         background-color: #b3b3b3ff;
     }
+    span img,
+    .images img {
+      width: 100%
+    }
 }
 
 @media (max-width: 960px){
