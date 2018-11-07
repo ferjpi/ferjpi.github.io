@@ -4,7 +4,9 @@
   "description": "Personal Blog",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard --fix",
+    "start": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,16 @@
   "bugs": {
     "url": "https://github.com/ferjpi/ferjpi.github.io/issues"
   },
-  "homepage": "https://github.com/ferjpi/ferjpi.github.io#readme"
+  "homepage": "https://github.com/ferjpi/ferjpi.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.4.0",
+    "panini": "^1.6.3",
+    "standard": "^12.0.1"
+  }
 }
