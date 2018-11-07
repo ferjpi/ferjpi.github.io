@@ -3,6 +3,7 @@
 const gulp = require('gulp')
 const panini = require('panini')
 const tinyImage = require('gulp-imagemin')
+const jsMin = require('gulp-jsmin')
 const clean = require('gulp-clean-css')
 const rename = require('gulp-rename')
 const browser = require('browser-sync')

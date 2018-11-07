@@ -6,6 +6,10 @@
 .container{
     width: 100%;
 }
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 .row, .container {
   margin: 0;
   padding: 0;
@@ -26,6 +30,11 @@
   color: #000;
 }
 
+.date {
+  font-size: 12px;
+  text-align: right;
+  font-weight: 300;
+}
 /* Menu */
 
 #menu .nav-link:hover {
